@@ -1,0 +1,27 @@
+.intro-section {
+    /* display side by side */
+    display: flex;
+    flex-direction: row;
+
+    /* top | left and right | bottom */
+    margin: 5rem 2rem 5rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.intro-text {
+    width: 100%;
+    text-align: left;
+    padding-top: 5rem;
+    padding-right: 6rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
