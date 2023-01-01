@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ProjectCard.css';
+import PopUp from './PopUp';
 
-const ProjectCard = ({title, tags, description, img}) => {
+const ProjectCard = ({title, tags, description, fullDescriptionPath, img}) => {
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
   return (
     <div className="card-content">
         <img src={img} alt={title} />
-        <h6>{title}</h6>
+        <div>
+            <a onClick={togglePopup}>
+                <h6>{title}</h6>
+            </a>
+            {isOpen && <PopUp
+            contentFile={fullDescriptionPath}
+            handleClose={togglePopup}
+            />}
+        </div>
+
         <p>{description}</p>
         <div className="tags">
             <p>tags:</p>

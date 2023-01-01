@@ -7,6 +7,7 @@
 
 .card-content img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .card-content h6 {
@@ -30,4 +31,9 @@
     margin: 0.5rem 0 0;
     display: flex;
     float: left;
+}
+
+a:hover {
+    color: #815AB4;
+    text-decoration: underline;
 }
