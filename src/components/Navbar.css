@@ -2,9 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.sparkle-icon {
+    width: 20%;
 }
 
 .nav-menu {

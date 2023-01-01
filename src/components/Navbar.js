@@ -9,9 +9,15 @@ const Navbar = () => {
 
   return (
     <div className="header">
-        <Link to="/">
-            <h1>Inga Zhuravleva</h1>
-        </Link>
+        <div className="heading">
+          <Link to="/">
+              <h1>Inga Zhuravleva</h1>
+          </Link>
+          <div className="sparkle-icon">
+            <img src="../../imgs/sparkle.png"></img>
+          </div>
+        </div>
+
         <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li><Link to="/projects">projects</Link></li>
             <li><Link to="/about">about</Link></li>
