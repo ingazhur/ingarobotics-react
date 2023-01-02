@@ -1,9 +1,24 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-function Projects() {
+import '../index.css';
+import { useEffect, useState } from 'react';
+
+const Projects = () => {
+  const [mode, setMode] = useState('light');
+  useEffect(() => {
+    if (window.location.pathname === '/projects') {
+      setMode('dark');
+    } else {
+      setMode('light');
+    }
+  }, []);
+
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className={`${mode}`}>
+      <Navbar />
+      <Footer />
     </div>
   )
 }

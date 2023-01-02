@@ -44,3 +44,7 @@ img {
     padding: 1rem 1rem 0;
     font-size: 1.5rem;
 }
+
+.intro-text p {
+    color: #000;
+}

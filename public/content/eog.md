@@ -1,1 +1,3 @@
-This is description of the EOG project.
+![](../imgs/dino-game.gif)
+
+This is description of the project

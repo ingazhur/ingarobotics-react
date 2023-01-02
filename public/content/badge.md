@@ -1,1 +1,2 @@
-This is description of the badge project.
+![](../imgs/badge.gif)
+This is description of the project

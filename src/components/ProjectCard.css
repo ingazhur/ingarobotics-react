@@ -12,12 +12,14 @@
 
 .card-content h6 {
     margin: 0.5rem 0 0;
+    color: #000;
 }
 
 .card-content p {
     width: 100%;
     text-align: left;
     margin: 0.5rem 0 0;
+    color: #000;
 }
 
 .tags p {

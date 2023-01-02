@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Navbar.css';
 import {Link} from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -7,8 +7,17 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [mode, setMode] = useState('light');
+  useEffect(() => {
+    if (window.location.pathname === '/projects') {
+      setMode('dark');
+    } else {
+      setMode('light');
+    }
+  }, []);
+
   return (
-    <div className="header">
+    <div className={`header ${mode}`}>
         <div className="heading">
           <Link to="/">
               <h1>Inga Zhuravleva</h1>

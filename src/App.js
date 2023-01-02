@@ -4,10 +4,21 @@ import Home from './routes/Home';
 import Projects from './routes/Projects';
 
 import {Routes, Route} from 'react-router-dom';
+import {useState, useEffect} from 'react';
+
 
 function App() {
+  const [mode, setMode] = useState('light');
+  useEffect(() => {
+    if (window.location.pathname === '/projects') {
+      setMode('dark');
+    } else {
+      setMode('light');
+    }
+  }, []);
+
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

@@ -1,1 +1,3 @@
-This is description of the NFC project.
+![](../imgs/contact-card.jpg)
+
+This is description of the project

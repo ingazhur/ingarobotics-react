@@ -19,6 +19,8 @@
     padding: 20px;
     border: 1px solid #999;
     overflow: auto;
+    display: flex;
+    flex-direction: row;
   }
    
   .close-icon {
@@ -36,4 +38,10 @@
     border: 1px solid #999;
     font-size: 20px;
   }
-  
+
+.box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
