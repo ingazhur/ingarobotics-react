@@ -3,6 +3,14 @@
     margin-bottom: 5rem;
 }
 
+.featured-section .card-content p {
+    color: #000;
+}
+
+.featured-section .card-content h6 {
+    color: #000;
+}
+
 .featured-section h3 {
     font-family: 'Space Mono', monospace;  
 }
@@ -17,6 +25,13 @@
     margin: 3rem 6rem 2rem;
 }
 
+.cards p {
+    color: #000;
+}
+
+
+
+/* external link icon */
 .more-projects a {
     display: flex;
     flex-direction: row;
@@ -25,11 +40,6 @@
 }
 
 .more-projects a:hover {
-    color: #000;
-}
-
-.more-projects h5 {
-    padding: 0 0.5rem 0;
     color: #000;
 }
   

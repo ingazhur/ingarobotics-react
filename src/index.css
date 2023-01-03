@@ -51,3 +51,24 @@ ul {
   color: #fff;
   transition: 0.3s;
 }
+
+.react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 8px;
+  position: relative;
+  max-height: calc(100% - 10vw);
+  min-width: 288px;
+  border: 0;
+  background: white;
+  overflow: auto;
+  font: inherit;
+  color: inherit;
+}
+
+
