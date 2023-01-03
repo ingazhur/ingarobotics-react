@@ -8,7 +8,7 @@ var selected_tags = [];
 const nfc_card = {
     title: "NFC contact card",
     tags: ["hardware"],
-    description: "A PCB contact card that can be used to share contact information with others by tapping it to their phone",
+    description: "Contact PCB card with NFC chip and an LED",
     fullDescriptionPath: "../../content/nfc.md",
     img: "../../imgs/contact-card.jpg"
 }
@@ -49,7 +49,93 @@ const cansat2018 = {
     img: "../../imgs/cansat2018.jpg"
 }
 
-const projects = [nfc_card, eog_game, badge, cansat2016, cansat2017, cansat2018];
+const copter = {
+    title: "CopterHack",
+    tags: ["hackathon project", "computer vision"],
+    description: "Autonomous drone assembled and programmed in a weekend during a hackathon",
+    img: "../../imgs/copter.jpg"
+}
+
+const hat = {
+    title: "Raspberry Pi hat",
+    tags: ["hardware"],
+    description: "Add-on module for Raspberry Pi to support a system for autonomous testing of multiple boards",
+    img: "../../imgs/hat.jpg"
+}
+
+const robot1 = {
+    title: "Delivery robot",
+    tags: ["hackathon project", "software"],
+    description: "Remote-controlled robot with object-grasping capabilities",
+    img: "../../imgs/robot1.gif"
+}
+
+const robot2 = {
+    title: "Line-following robot",
+    tags: ["hackathon project", "software"],
+    description: "Autonomous line-follower robot capable of obstacle avoidance",
+    img: "../../imgs/robot2.jpg"
+}
+
+const remote = {
+    title: "Remote control",
+    tags: ["personal project", "hardware"],
+    description: "Remote control for a robot with a custom-designed PCB",
+    img: "../../imgs/remote.jpg"
+}
+
+const sixt33n = {
+    title: "SIXT33N on Mars",
+    tags: ["class project", "software"],
+    description: "SP21 TI Design contest submission, 1st Place",
+    img: "../../imgs/sixt33n.jpg"
+}
+
+const wall_climber = {
+    title: "Wall-climbing robot",
+    tags: ["class project", "hardware", "3D modeling"],
+    description: "Final project for an engineering design course I took my senior year of high school",
+    img: "../../imgs/wall-climber.jpg"
+}
+
+const eog_pcb = {
+    title: "PCB for recording EOG signals",
+    tags: ["team project", "hardware"],
+    description: "Analog front end (AFE) circuit tuned for recording electrooculogram (EOG) signals",
+    img: "../../imgs/eog.png"
+}
+
+const byow = {
+    title: "Build your own world",
+    tags: ["personal project", "software", "Java"],
+    description: "",
+    img: "../../imgs/byow.png"
+}
+
+const olympiad = {
+    title: "Robot tracker",
+    tags: ["personal project", "software", "C++", "computer vision"],
+    description: "",
+    img: "../../imgs/robotics-olympiad.png"
+}
+
+const robot3 = {
+    title: "Remote controlled robot",
+    tags: ["personal project", "hardware"],
+    description: "",
+    img: "../../imgs/rc-robot.png"
+}
+
+const website = {
+    title: "ingarobotics.com",
+    tags: ["personal project", "software", "React"],
+    description: "",
+    img: "../../imgs/website.png"
+}
+
+
+
+const projects = [nfc_card, eog_game, badge, cansat2016, cansat2017, cansat2018, copter, hat, robot1, robot2, remote, sixt33n, wall_climber, eog_pcb, byow, olympiad, robot3, website];
 
 const options = [
     { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'all projects', label: 'all projects' },
@@ -168,6 +254,78 @@ const ProjectsIntro = () => {
                 tags={cansat2018.tags}
                 description={cansat2018.description}
                 img={cansat2018.img}
+            />
+            <PostPreview
+                title={copter.title}
+                tags={copter.tags}
+                description={copter.description}
+                img={copter.img}
+            />
+            <PostPreview
+                title={hat.title}
+                tags={hat.tags}
+                description={hat.description}
+                img={hat.img}
+            />
+            <PostPreview
+                title={robot1.title}
+                tags={robot1.tags}
+                description={robot1.description}
+                img={robot1.img}
+            />
+            <PostPreview
+                title={robot2.title}
+                tags={robot2.tags}
+                description={robot2.description}
+                img={robot2.img}
+            />
+            <PostPreview
+                title={remote.title}
+                tags={remote.tags}
+                description={remote.description}
+                img={remote.img}
+            />
+            <PostPreview
+                title={sixt33n.title}
+                tags={sixt33n.tags}
+                description={sixt33n.description}
+                img={sixt33n.img}
+            />
+            <PostPreview
+                title={wall_climber.title}
+                tags={wall_climber.tags}
+                description={wall_climber.description}
+                img={wall_climber.img}
+            />
+            <PostPreview
+                title={eog_pcb.title}
+                tags={eog_pcb.tags}
+                description={eog_pcb.description}
+                img={eog_pcb.img}
+            />
+            <PostPreview
+                title={byow.title}
+                tags={byow.tags}
+                description={byow.description}
+                img={byow.img}
+            />
+            <PostPreview
+                title={olympiad.title}
+                tags={olympiad.tags}
+                description={olympiad.description}
+                img={olympiad.img}
+            />
+            <PostPreview
+                title={robot3.title}
+                tags={robot3.tags}
+                description={robot3.description}
+                img={robot3.img}
+            />
+            <PostPreview
+                title={website.title}
+                tags={website.tags}
+                description={website.description}
+                img={website.img}
             />
 
 
