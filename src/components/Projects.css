@@ -10,5 +10,14 @@
     width: 50%;
     margin-left: 5%;
     margin-top: 1rem;
-    margin-bottom: 40%;
+    margin-bottom: auto;
+}
+
+
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: wrap;
+    margin: 3rem 6rem 2rem;
 }

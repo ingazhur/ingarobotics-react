@@ -1,11 +1,12 @@
 .card-content {
-    width: 100%;
+    width: 30%;
     margin: 1rem 1rem 1rem 1rem;
     display: block;
     padding: 2rem 2rem 2rem;
     border: 2px solid #999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    overflow-wrap: normal;
 }
 
 .card-content img {
@@ -15,7 +16,7 @@
 
 .card-content h6 {
     margin: 0.5rem 0 0;
-    color: #000;
+    color: #fff;
 }
 
 
@@ -23,7 +24,7 @@
     width: 100%;
     text-align: left;
     margin: 0.5rem 0 0;
-    color: #000;
+    color: #fff;
 }
 
 .tags p {

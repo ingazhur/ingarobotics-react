@@ -24,6 +24,10 @@
     color: #000;
 }
 
+.more-projects a:hover {
+    color: #000;
+}
+
 .more-projects h5 {
     padding: 0 0.5rem 0;
     color: #000;

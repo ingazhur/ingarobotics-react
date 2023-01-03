@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import './ProjectCard.css';
 import PopUp from './PopUp';
+import './PostPreview.css';
 
-const ProjectCard = ({title, tags, description, fullDescriptionPath, img}) => {
+const PostPreview = ({title, tags, description, img}) => {
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {
@@ -23,4 +23,4 @@ const ProjectCard = ({title, tags, description, fullDescriptionPath, img}) => {
   )
 }
 
-export default ProjectCard;
+export default PostPreview;
