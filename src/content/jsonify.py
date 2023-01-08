@@ -10,8 +10,12 @@
 import json
 
 # read projects.md
-with open('projects.md', 'r') as f:
-    lines = f.readlines()
+try:
+    with open('projects.md', 'r') as f:
+        lines = f.readlines()
+except:
+    print('Error: projects.md not found')
+    exit()
 
 # parse projects.md
 projects = []
@@ -40,6 +44,24 @@ for line in lines:
 
 # add last project
 projects.append(project)
+
+# in a description section, identify markdown links and replace them with html links
+# so that they can be rendered in the description section
+# example: [link text](link url) -> <a href="link url">link text</a>
+for project in projects:
+    description = project['description']
+    while True:
+        start = description.find('[')
+        end = description.find(']')
+        if start == -1 or end == -1:
+            break
+        link_text = description[start+1:end]
+        link_url = description[end+2:description.find(')', end)]
+        link = '<a href="' + link_url + '">' + link_text + '</a>'
+        description = description[:start] + link + description[description.find(')', end)+1:]
+    # append <p> at the beginnging and </p> at the end of description
+    description = '<p>' + description + '</p>'
+    project['description'] = description
 
 # write projects.json
 with open('projects.json', 'w') as f:

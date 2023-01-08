@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import PopUp from './PopUp';
 import './PostPreview.css';
+import ReactHtmlParser from 'react-html-parser';
 
 const setTagColor = (tag) => {
   switch (tag) {
@@ -31,7 +32,7 @@ const PostPreview = ({title, tags, description, img}) => {
     <div className="card-content">
         <img src={img} alt={title} />
         <h4>{title}</h4>
-        <p>{description}</p>
+        { ReactHtmlParser (description) }
         <div className="tags">
             {tags.map((tag, index) => (
                 <p key={index}>{tag}</p>
