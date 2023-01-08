@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ProjectsIntro from '../components/ProjectsIntro';
+import ProjectsIntro from '../components/ProjectsSection';
 
 import '../index.css';
 import { useEffect, useState } from 'react';
@@ -17,7 +17,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className={`${mode}`}>
+    <div className={`sparkle-cursor ${mode}`}>
       <Navbar />
       <ProjectsIntro />
       <Footer />
