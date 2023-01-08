@@ -41,7 +41,7 @@ function FeaturedSection() {
         </div>
         
         <div className="more-projects">
-            <Link to="/projects">
+            <Link to="/projects" target="_blank">
                 <h5>more projects</h5>
                 <i class="fa fa-external-link" aria-hidden="true"></i> 
             </Link>

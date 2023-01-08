@@ -20,6 +20,10 @@
     color: #F1AB42;
 }
 
+.center-section-text a:hover {
+    text-decoration: underline;
+}
+
 .center-section {
     /* top | left and right | bottom */
     margin: 5rem 10rem 5rem;

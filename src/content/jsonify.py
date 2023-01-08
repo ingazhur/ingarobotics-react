@@ -57,7 +57,7 @@ for project in projects:
             break
         link_text = description[start+1:end]
         link_url = description[end+2:description.find(')', end)]
-        link = '<a href="' + link_url + '">' + link_text + '</a>'
+        link = '<a href="' + link_url + '" target="_blank">' + link_text + '</a>'
         description = description[:start] + link + description[description.find(')', end)+1:]
     # append <p> at the beginnging and </p> at the end of description
     description = '<p>' + description + '</p>'

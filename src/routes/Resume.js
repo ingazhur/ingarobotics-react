@@ -26,7 +26,7 @@ const Projects = () => {
     setNumPages(numPages);
   }
   
-  const resumePath = "../../content/Inga_Zhuravleva_Resume.pdf";
+  const resumePath = "../../content/Inga_Zhuravleva_Resume.pdf"
 
   return (
     <div className={`${mode}`}>

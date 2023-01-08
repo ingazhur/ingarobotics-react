@@ -17,7 +17,7 @@ const CenterSection = () => {
             </p>
         </div>
         <div className="my-projects-btn">
-            <button type="button"><Link to="/projects">my projects</Link></button>
+            <button type="button"><Link to="/projects" target="_blank">my projects</Link></button>
         </div>
     </div>
   )

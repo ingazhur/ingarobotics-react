@@ -19,12 +19,19 @@
     color: #fff;
 }
 
-
 .card-content p  {
     width: 100%;
     text-align: left;
     margin: 0.5rem 0 0;
     color: #fff;
+}
+
+.card-content a {
+    color: #815AB4;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
 }
 
 .tags p {
@@ -39,9 +46,4 @@
     display: flex;
     flex-direction: row;
     float: left;
-}
-
-a:hover {
-    color: #815AB4;
-    text-decoration: underline;
 }
