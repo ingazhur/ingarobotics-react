@@ -13,7 +13,7 @@ An interactive conference PCB badge designed specifically for [Cal Hacks hackath
 tags: featured,hardware,personal projects,firmware,C/C++,all projects
 img: badge.gif
 ### SIXT33N on Mars
-SP21 TI Design contest submission. Apart from building a basic voice-controlled car (standard semester-long project in EECS16B), I expanded its features to include a camera sitting on a servo motor that is controlled through a web server runnning on a Raspberry Pi. Inspired by a recent Mard rover landing back then, I designed a theme for my project according to it. The web server acted as a mission control center that displayed a real-time camera stream, temperature data, and allowed the remote control of the camera. 
+SP21 TI Design contest submission. Apart from building a basic voice-controlled car (standard semester-long project in EECS16B), I expanded its features to include a camera sitting on a servo motor that is controlled through a web server runnning on a Raspberry Pi. Inspired by a recent Mars rover landing back then, I designed a theme for my project according to it. The web server acted as a mission control center that displayed a real-time camera stream, temperature data, and allowed the remote control of the camera. 
 This hack was built less than 24 hours before the submission deadline :P 
 I got a 1st place. Here is the [web app and demo](https://sixt33ntomars.web.app/).
 tags: class projects,firmware,software,Python,Raspberry Pi,all projects
