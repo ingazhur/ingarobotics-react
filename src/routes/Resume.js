@@ -26,7 +26,7 @@ const Projects = () => {
     setNumPages(numPages);
   }
   
-  const resumePath = "../../content/Inga_Zhuravleva_Resume.pdf"
+  const resumePath = "../content/Inga_Zhuravleva_Resume.pdf"
 
   return (
     <div className={`${mode}`}>
@@ -34,7 +34,6 @@ const Projects = () => {
       <Document file={resumePath} onLoadSuccess={onDocumentLoadSuccess}>
         <Page 
             pageNumber={pageNumber} 
-            height={800}
             file={resumePath}
             onLoadSuccess={onDocumentLoadSuccess}/>
       </Document>   

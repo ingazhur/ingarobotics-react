@@ -1,25 +1,33 @@
 /* DESKTOP */
 @media screen and (min-width: 900px) {
-
+    .projects-intro h3 {
+        color: #fff;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 6%;
+    }
+    .drop-down-menu {
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 1rem;
+        margin-bottom: auto;
+    }
+    
 }
 
 /* MOBILE */
 @media screen and (max-width: 900px) {
-
-}
-.projects-intro h3 {
-    color: #fff;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 6%;
-}
-
-
-.drop-down-menu {
-    width: 50%;
-    margin-left: 5%;
-    margin-top: 1rem;
-    margin-bottom: auto;
+    .projects-intro h3 {
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        margin-left: 6%;
+        margin-top: 3rem;
+    }
+    .drop-down-menu {
+        margin: 2rem 1rem 0;
+    }
+    
 }
 
 .card-content h4 {
@@ -33,8 +41,6 @@
     text-align: left;
     margin: 0.5rem 0 0;
 }
-
-
 
 .projects-grid {
     display: flex;
