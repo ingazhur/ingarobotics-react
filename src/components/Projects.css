@@ -1,3 +1,12 @@
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 900px) {
+
+}
 .projects-intro h3 {
     color: #fff;
     font-weight: 400;

@@ -11,12 +11,16 @@ const options = [
     { borderColor: '#9F9FF8', backgroundColor: '#453061', textColor: '#FEF6FE', value: 'personal projects', label: 'personal projects' },
     { borderColor: '#80CE93', backgroundColor: '#385841', textColor: '#D7DDD9', value: 'neurotech', label: 'neurotech' },
     { borderColor: '#F2C45D', backgroundColor: '#836534', textColor: '#FFFABC', value: 'software', label: 'software' },
-    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'firmware', label: 'firmware' },
+    { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'firmware', label: 'firmware' },
     { borderColor: '#ED9AB6', backgroundColor: '#62344B', textColor: '#FDE6FB', value: 'hardware', label: 'hardware' },
-    { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'hackathon projects', label: 'hackathon projects' },
     { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'computer vision', label: 'computer vision' },
+    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'C/C++', label: 'C/C++' },
+    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'Python', label: 'Python' },
+    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'Raspberry Pi', label: 'Raspberry Pi' },
+    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'Arduino', label: 'Arduino' },
+    { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'hackathon projects', label: 'hackathon projects' },
     { borderColor: '#DF3D30', backgroundColor: '#642D24', textColor: '#F5DFD3', value: 'class projects', label: 'class projects' },
-    { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'featured', label: 'featured' }
+    { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'featured', label: 'featured' },
 ]
 
 
