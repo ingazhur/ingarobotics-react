@@ -1,18 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import './Projects.css';
-import ProjectsGrid from './ProjectsGrid';
 import Select from 'react-select';
+import PostPreview from './PostPreview';
+import './Projects.css';
+import projects_json from "../content/projects.json";
 
 var selected_tags = [];
 
 const options = [
     { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'all projects', label: 'all projects' },
-    { borderColor: '#9F9FF8', backgroundColor: '#453061', textColor: '#FEF6FE', value: 'personal project', label: 'personal project' },
+    { borderColor: '#9F9FF8', backgroundColor: '#453061', textColor: '#FEF6FE', value: 'personal projects', label: 'personal projects' },
     { borderColor: '#80CE93', backgroundColor: '#385841', textColor: '#D7DDD9', value: 'neurotech', label: 'neurotech' },
     { borderColor: '#F2C45D', backgroundColor: '#836534', textColor: '#FFFABC', value: 'software', label: 'software' },
+    { borderColor: '#BEBCBC', backgroundColor: '#424242', textColor: '#FFFFFF', value: 'firmware', label: 'firmware' },
     { borderColor: '#ED9AB6', backgroundColor: '#62344B', textColor: '#FDE6FB', value: 'hardware', label: 'hardware' },
-    { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'hackathon project', label: 'hackathon project' },
-    { borderColor: '#DF3D30', backgroundColor: '#642D24', textColor: '#F5DFD3', value: 'class project', label: 'class project' }
+    { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'hackathon projects', label: 'hackathon projects' },
+    { borderColor: '#EF8452', backgroundColor: '#7E4F27', textColor: '#E5DBD4', value: 'computer vision', label: 'computer vision' },
+    { borderColor: '#DF3D30', backgroundColor: '#642D24', textColor: '#F5DFD3', value: 'class projects', label: 'class projects' },
+    { borderColor: '#6AAADF', backgroundColor: '#304469', textColor: '#D3EBEC', value: 'featured', label: 'featured' }
 ]
 
 
@@ -60,8 +64,11 @@ const customStyles = {
     }),
 };
 
+var selected_tags = ["all projects"];
+
 const ProjectsIntro = () => {
-    const [selectedOption, setSelectedOption] = useState("")
+    const [selectedOption, setSelectedOption] = useState("all projects")
+    const [projects, setProjects] = useState(projects_json);
 
     var handleChange = (selectedOption) => {
         setSelectedOption(selectedOption.value);
@@ -69,7 +76,24 @@ const ProjectsIntro = () => {
         for (var i = 0; i < selectedOption.length; i++) {
             selected_tags.push(selectedOption[i].value);
         }
-        //console.log(selected_tags);
+
+        var filtered_projects = [];
+        for (var i = 0; i < projects_json.length; i++) {
+            var project = projects_json[i];
+            var project_tags = project.tags;
+            var match = true;
+            for (var j = 0; j < selected_tags.length; j++) {
+                var tag = selected_tags[j];
+                if (!project_tags.includes(tag)) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                filtered_projects.push(project);
+            }
+        }
+        setProjects(filtered_projects);
     };
 
   return (
@@ -84,7 +108,17 @@ const ProjectsIntro = () => {
                 defaultValue={[options[0]]}
             />
         </div>
-        <ProjectsGrid selected_tags={selected_tags}/>
+        <div className="projects-grid">
+            {projects.map((project, index) => (
+                <PostPreview 
+                    key={index} 
+                    title={project.title} 
+                    tags={project.tags} 
+                    description={project.description} 
+                    img={project.img} 
+                />
+            ))}
+        </div>
     </div>
   )
 }

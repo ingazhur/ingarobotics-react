@@ -22,10 +22,6 @@
     margin: 3rem 6rem 2rem;
 }
 
-.tags p {
-    margin: 1rem;
-}
-
-.tags {
-    visibility: hidden;
+.featured-section h4 {
+    color: #000;
 }

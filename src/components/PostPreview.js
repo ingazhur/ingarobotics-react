@@ -1,25 +1,22 @@
 import React, {useState} from 'react'
+import ReactHtmlParser from 'react-html-parser';
 import PopUp from './PopUp';
 import './PostPreview.css';
-import ReactHtmlParser from 'react-html-parser';
+import colors from "../content/colors.json";
+
+const setTagBackgroundColor = (tag) => {
+    tag = tag.toString();
+    return colors[tag] ? colors[tag].backgroundColor : "#424242";
+}
 
 const setTagColor = (tag) => {
-  switch (tag) {
-      case 'personal project':
-          return '#453061';
-      case 'neurotech':
-          return '#304469';
-      case 'software':
-          return '#385841';
-      case 'hardware':
-          return '#836534';
-      case 'hackathon project':
-          return '#7E4F27';
-      case 'class project':
-          return '#642D24';
-      default:
-          return '#000000';
-  }
+    tag = tag.toString();
+    return colors[tag] ? colors[tag].textColor: "#FFFFFF";
+}
+
+const setBorderTagColor = (tag) => {
+    tag = tag.toString();
+    return colors[tag] ? colors[tag].borderColor: "#BEBCBC";
 }
 
 const PostPreview = ({title, tags, description, img}) => {
@@ -34,8 +31,17 @@ const PostPreview = ({title, tags, description, img}) => {
         <h4>{title}</h4>
         { ReactHtmlParser (description) }
         <div className="tags">
-            {tags.map((tag, index) => (
-                <p key={index}>{tag}</p>
+            {tags && tags.filter(tag => tag !== "featured" && tag !== "all projects").map((tag, index) => (
+                <div className="tag" key={index} 
+                    style={{
+                        backgroundColor: setTagBackgroundColor(tag), 
+                        color: setTagColor(tag), 
+                        borderLeft: `4px solid ${setBorderTagColor(tag)}`, 
+                        borderRightRadius: 5,
+                        display: "flex",
+                        width: "fit-content",fontSize: "0.9rem"}}>
+                    {tag}
+                </div>
             ))}
         </div>
     </div>

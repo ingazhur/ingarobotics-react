@@ -67,4 +67,21 @@ for project in projects:
 with open('projects.json', 'w') as f:
     json.dump(projects, f)
 
- 
+# ================
+
+# color scheme for project tags
+colors = {
+    'all projects': { 'borderColor': '#6AAADF', 'backgroundColor': '#304469', 'textColor': '#D3EBEC' },
+    'personal projects': { 'borderColor': '#9F9FF8', 'backgroundColor': '#453061', 'textColor': '#FEF6FE' },
+    'neurotech': { 'borderColor': '#80CE93', 'backgroundColor': '#385841', 'textColor': '#D7DDD9' },
+    'software': { 'borderColor': '#F2C45D', 'backgroundColor': '#836534', 'textColor': '#FFFABC' },
+    'firmware': { 'borderColor': '#BEBCBC', 'backgroundColor': '#424242', 'textColor': '#FFFFFF' },
+    'hardware': { 'borderColor': '#ED9AB6', 'backgroundColor': '#62344B', 'textColor': '#FDE6FB' },
+    'hackathon projects': { 'borderColor': '#EF8452', 'backgroundColor': '#7E4F27', 'textColor': '#E5DBD4' },
+    'computer vision': { 'borderColor': '#EF8452', 'backgroundColor': '#7E4F27', 'textColor': '#E5DBD4' },
+    'class projects': { 'borderColor': '#DF3D30', 'backgroundColor': '#642D24', 'textColor': '#F5DFD3' },
+}
+
+with open('colors.json', 'w') as f:
+    json.dump(colors, f)
+
