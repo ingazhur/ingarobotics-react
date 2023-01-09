@@ -3,16 +3,14 @@
     margin-bottom: 5rem;
 }
 
-.featured-section .card-content p {
+.featured-section .projects-grid .card-content p, h4, h6 {
     color: #000;
 }
 
-.featured-section .card-content h6 {
-    color: #000;
-}
-
-.featured-section h3 {
-    font-family: 'Space Mono', monospace;  
+.featured-section .projects-grid .card-content h4 {
+    font-family: 'Space Mono', monospace; 
+    color: #000; 
+    font-size: 1rem;
 }
 
 .featured-section p {
@@ -23,25 +21,20 @@
     visibility: hidden;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    margin: 3rem 6rem 2rem;
-}
-
-.cards p {
-    color: #000;
-}
-
 /* external link icon */
 .more-projects a {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: #000;
+    text-decoration: underline;
 }
 
 .more-projects a:hover {
     color: #000;
+}
+
+i {
+    margin-left: 0.5rem;
 }
   

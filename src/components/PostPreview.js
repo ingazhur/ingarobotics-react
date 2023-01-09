@@ -35,9 +35,8 @@ const PostPreview = ({title, tags, description, img}) => {
                 <div className="tag" key={index} 
                     style={{
                         backgroundColor: setTagBackgroundColor(tag), 
-                        color: setTagColor(tag), 
-                        borderLeft: `4px solid ${setBorderTagColor(tag)}`, 
-                        borderRightRadius: 5,
+                        color: setTagColor(tag),
+                        borderRadius: "2px",
                         display: "flex",
                         width: "fit-content",fontSize: "0.9rem"}}>
                     {tag}

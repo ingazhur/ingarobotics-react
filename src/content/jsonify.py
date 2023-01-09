@@ -78,7 +78,7 @@ colors = {
     'firmware': { 'borderColor': '#BEBCBC', 'backgroundColor': '#424242', 'textColor': '#FFFFFF' },
     'hardware': { 'borderColor': '#ED9AB6', 'backgroundColor': '#62344B', 'textColor': '#FDE6FB' },
     'hackathon projects': { 'borderColor': '#EF8452', 'backgroundColor': '#7E4F27', 'textColor': '#E5DBD4' },
-    'computer vision': { 'borderColor': '#EF8452', 'backgroundColor': '#7E4F27', 'textColor': '#E5DBD4' },
+    'computer vision': { 'borderColor': '#80CE93', 'backgroundColor': '#385841', 'textColor': '#D7DDD9' },
     'class projects': { 'borderColor': '#DF3D30', 'backgroundColor': '#642D24', 'textColor': '#F5DFD3' },
 }
 

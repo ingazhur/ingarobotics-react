@@ -2,7 +2,7 @@
 A remote-controlled robot with object-grasping capabilities built during a week-long hackathon. The goal of the competition was to build a free-form robot fitting certain size parameters to score as many points as possible by grabbing/transporting objects to a certain area, building a tower, completing side challenges, etc. I developed all the firmware for both the robot and the remote control required to drive the robot and control the claw. As first-time participants, our team scored 3rd, competing alongside competition veterans.
 tags: featured,firmware,Arduino,all projects
 img: robot1.gif
-### Gaze-controlled game:
+### Eye-tracking system
 A full-stack neurotechnology project involving both hardware and firmware development components. The eye-tracking system is based on [electrooculography (EOG)](https://en.wikipedia.org/wiki/Electrooculography) technique (not cameras, as compared to the standard in AR/VR applications), and allows basic control of a [Chrome dinosaur game](https://trex-runner.com/) with blinks. On the GIF, electrodes are attached to the area above and below my eye that measures voltage difference between the two sites. That signal is later filtered and amplifier through an analog front-end PCB that later connects to a laptop for visualization.
 (Learn more)
 tags: featured,neurotech,hardware,software,firmware,ongoing projects,all projects
