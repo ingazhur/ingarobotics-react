@@ -1,3 +1,7 @@
+### MIT Reality Hack 2023
+Team submission to a 3-day VR/AR hackathon at MIT as a part of the hardware track. We designed our own controller connecting to a Oculus headset via bluetooth. We wanted to make climbing the stairs more fun by incorporating hardware feedback (LEDs and vibration motors activated by a step count) and motivating videos embedded into the VR passthrough experience. I designed the step tracking system based on IMU sensor and barometer, plus firmware integration. [(Link to a Devpost for more details)](https://devpost.com/software/arcade-steps)
+tags: hardware,VR/AR,firmware,C/C++,ESP32,hackathon projects,all projects
+img: arcade-steps.png
 ### Delivery robot
 A remote-controlled robot with object-grasping capabilities built during a week-long hackathon. The goal of the competition was to build a free-form robot fitting certain size parameters to score as many points as possible by grabbing/transporting objects to a certain area, building a tower, completing side challenges, etc. I developed all the firmware for both the robot and the remote control required to drive the robot and control the claw.
 tags: featured,firmware,C/C++,Arduino,all projects
@@ -7,11 +11,6 @@ A full-stack neurotechnology project involving both hardware and firmware develo
 (Learn more)
 tags: featured,neurotech,hardware,software,firmware,Python,C/C++,ongoing projects,all projects
 img: dino-game.gif
-### Cal Hacks 8.0 badge
-An interactive conference PCB badge designed specifically for [Cal Hacks hackathon](https://www.calhacks.io/). This is a large-scale project (order of ~500 boards) where the bare boards were distributed at a soldering workshop and assembled by the Cal Hacks participants. I designed the PCBs and organized a full-day soldering workshop attended by hundreds hackers.
-(Learn more)
-tags: featured,hardware,personal projects,firmware,C/C++,all projects
-img: badge.gif
 ### SIXT33N on Mars
 SP21 TI Design contest submission. Apart from building a basic voice-controlled car (standard semester-long project in EECS16B), I expanded its features to include a camera sitting on a servo motor that is controlled through a web server runnning on a Raspberry Pi. Inspired by a recent Mars rover landing back then, I designed a theme for my project according to it. The web server acted as a mission control center that displayed a real-time camera stream, temperature data, and allowed the remote control of the camera. 
 This hack was built less than 24 hours before the submission deadline :P 
@@ -49,6 +48,11 @@ A custom-made contact PCB card that redirects to my LinkedIn page when tapping o
 (See demo)
 tags: personal projects,hardware,all projects
 img: contact-card.jpg
+### Cal Hacks 8.0 badge
+An interactive conference PCB badge designed specifically for [Cal Hacks hackathon](https://www.calhacks.io/). This is a large-scale project (order of ~500 boards) where the bare boards were distributed at a soldering workshop and assembled by the Cal Hacks participants. I designed the PCBs and organized a full-day soldering workshop attended by hundreds hackers.
+(Learn more)
+tags: featured,hardware,personal projects,firmware,C/C++,all projects
+img: badge.gif
 ### CopterHack
 Autonomous drone assembled and programmed in a weekend during a [CopterHack](https://coex.tech/copterhack2022) hackathon.
 tags: hackathon projects,computer vision,Python,Raspberry Pi,all projects
