@@ -1,6 +1,7 @@
 ### MIT Reality Hack 2023
-Team submission to a 3-day VR/AR hackathon at MIT as a part of the hardware track. We designed our own controller connecting to a Oculus headset via bluetooth. We wanted to make climbing the stairs more fun by incorporating hardware feedback (LEDs and vibration motors activated by a step count) and motivating videos embedded into the VR passthrough experience. I designed the step tracking system based on IMU sensor and barometer, plus firmware integration. [(Link to a Devpost for more details)](https://devpost.com/software/arcade-steps)
-tags: hardware,VR/AR,firmware,C/C++,ESP32,hackathon projects,all projects
+Team submission to a 3-day VR/AR hackathon at MIT as a part of the hardware track. We designed our own controller connecting to a Oculus headset via bluetooth. We wanted to make climbing the stairs more fun by incorporating hardware feedback (LEDs and vibration motors activated by a step count) and motivating videos embedded into the VR passthrough experience. I designed the step tracking system based on IMU sensor and barometer, plus firmware integration. This project won the "Hardware: Interfacing with the Human Body" track. 
+[(Link to a Devpost for more details)](https://devpost.com/software/arcade-steps)
+tags: featured,hardware,VR/AR,firmware,C/C++,ESP32,hackathon projects,all projects
 img: arcade-steps.png
 ### Delivery robot
 A remote-controlled robot with object-grasping capabilities built during a week-long hackathon. The goal of the competition was to build a free-form robot fitting certain size parameters to score as many points as possible by grabbing/transporting objects to a certain area, building a tower, completing side challenges, etc. I developed all the firmware for both the robot and the remote control required to drive the robot and control the claw.
@@ -8,7 +9,7 @@ tags: featured,firmware,C/C++,Arduino,all projects
 img: robot1.gif
 ### Eye-tracking system
 A full-stack neurotechnology project involving both hardware and firmware development components. The eye-tracking system is based on [electrooculography (EOG)](https://en.wikipedia.org/wiki/Electrooculography) technique (not cameras, as compared to the standard in AR/VR applications), and allows basic control of a [Chrome dinosaur game](https://trex-runner.com/) with blinks. On the GIF, electrodes are attached to the area above and below my eye that measures voltage difference between the two sites. That signal is later filtered and amplifier through an analog front-end PCB that later connects to a laptop for visualization.
-(Learn more)
+[Github](https://github.com/neurotech-berkeley-devices/eog-eye-tracking)
 tags: featured,neurotech,hardware,software,firmware,Python,C/C++,ongoing projects,all projects
 img: dino-game.gif
 ### SIXT33N on Mars
@@ -51,7 +52,7 @@ img: contact-card.jpg
 ### Cal Hacks 8.0 badge
 An interactive conference PCB badge designed specifically for [Cal Hacks hackathon](https://www.calhacks.io/). This is a large-scale project (order of ~500 boards) where the bare boards were distributed at a soldering workshop and assembled by the Cal Hacks participants. I designed the PCBs and organized a full-day soldering workshop attended by hundreds hackers.
 (Learn more)
-tags: featured,hardware,personal projects,firmware,C/C++,all projects
+tags: hardware,personal projects,firmware,C/C++,all projects
 img: badge.gif
 ### CopterHack
 Autonomous drone assembled and programmed in a weekend during a [CopterHack](https://coex.tech/copterhack2022) hackathon.
