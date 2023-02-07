@@ -12,12 +12,18 @@ A full-stack neurotechnology project involving both hardware and firmware develo
 [Github](https://github.com/neurotech-berkeley-devices/eog-eye-tracking)
 tags: featured,neurotech,hardware,software,firmware,Python,C/C++,ongoing projects,all projects
 img: dino-game.gif
+### EOG analog front end PCB (1st gen)
+A 4-layer printed circuit board dedicated to collecting EOG signals for eye tracking. The PCB features two identical channels (for capturing vertical and horizontal eye movements). Each channel has an instrumentation amplifier, a high pass filter (0.4Hz cutoff), a twin-T notch filter for eliminating the 60Hz noise, Sallen-Key low pass filter (48Hz cutoff), and another amplification stage. All circuit blocks are intended to capture the EOG signal, so every setting was selected to accomodate for the frequency range and the typical amplitude of the signal. The input to the board are power + five electrodes (2 per channel, and one reference). The output are two analog signals that could be sampled with a 5V-compatible microcontroller. 
+img: eog_1st_gen.jpg
+### EOG analog front end PCB (2nd gen)
+Second iteration of the EOG PCB. This board was designed to accommodate for varying strength of the EOG signal in each person, and it features multiple digital potentiometers instead of fixed resistors at amplification stages. Inputs and outputs of the PCB are similar to the 1st gen board, and it is smaller and more compatible with a consumer headset.
+img: eog_2nd_gen.jpg
 ### SIXT33N on Mars
 SP21 TI Design contest submission. Apart from building a basic voice-controlled car (standard semester-long project in EECS16B), I expanded its features to include a camera sitting on a servo motor that is controlled through a web server runnning on a Raspberry Pi. Inspired by a recent Mars rover landing back then, I designed a theme for my project according to it. The web server acted as a mission control center that displayed a real-time camera stream, temperature data, and allowed the remote control of the camera. 
 This hack was built less than 24 hours before the submission deadline :P 
 I got a 1st place. Here is the [web app and demo](https://sixt33ntomars.web.app/).
 tags: class projects,firmware,software,Python,Raspberry Pi,all projects
-img: sixt33n.jpg
+img: sixteen.jpg
 ### Robot tracker
 A concept of a robotics olympiad that I designed as a part of advanced robotics division in MSHP (Moscow School of Programmers) while in high school. The olympiad itself are for kids making Lego robots that need to follow the course map and receive the commands by accessing a web server telling them whether it's safe to move forward (this is where my Qt application comes in). The image below is a proof-of-concept of the command panel that I designed to be used by the operators. A simple web camera is secured directly above the map. I performed a real-time video processing with OpenCV (C++) that detected robots (pure computer vision based on HSV thresholding) and determined whether any of them are on a collision course.
 tags: personal projects,software,C/C++,computer vision,all projects
