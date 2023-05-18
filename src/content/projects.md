@@ -1,3 +1,11 @@
+### Segment Any PCB [in progress]
+This project is my exploration of Meta's recent [Segment Anything Model](https://segment-anything.com/), which surprisingly, isolated very unique electrical components. I wanted to build a system that would automatically compare a breadboard prototype to a reference circuit design to spot any bugs in assembly. Work in progress.
+tags: software,Python,computer vision,personal projects,ongoing projects,all projects
+img: SAM.png
+### EMG wristband [in progress]
+I was curious to explore how we can utilize real-time processing of EMG (electromyography = measuring muscle response and electrical activity) signals from the wrist and translate captured features into controls. Potential application could be replacing remote control of an electric skateboard or playing musical instruments. This project won Jacobs Innovation Spark grant for Spring 2023.
+tags: hardware,neurotech,firmware,C/C++,ESP32,ongoing projects,all projects
+img: EMG.png
 ### MIT Reality Hack 2023
 Team submission to a 3-day VR/AR hackathon at MIT as a part of the hardware track. We designed our own controller connecting to a Oculus headset via bluetooth. We wanted to make climbing the stairs more fun by incorporating hardware feedback (LEDs and vibration motors activated by a step count) and motivating videos embedded into the VR passthrough experience. I designed the step tracking system based on IMU sensor and barometer, plus firmware integration. This project won the "Hardware: Interfacing with the Human Body" track. 
 [(Link to a Devpost for more details)](https://devpost.com/software/arcade-steps)
@@ -8,15 +16,11 @@ A full-stack neurotechnology project involving both hardware and firmware develo
 [Github](https://github.com/neurotech-berkeley-devices/eog-eye-tracking)
 tags: featured,neurotech,hardware,software,firmware,Python,C/C++,ongoing projects,all projects
 img: dino-game.gif
-### EOG analog front end PCB (2nd gen)
-Second iteration of the EOG PCB. This board was designed to accommodate for varying strength of the EOG signal in each person, and it features multiple digital potentiometers instead of fixed resistors at amplification stages. Inputs and outputs of the PCB are similar to the 1st gen board, and it is smaller and more compatible with a consumer headset.
-tags: neurotech,hardware,all projects
-img: eog_2nd_gen.jpg
 ### Delivery robot
 A remote-controlled robot with object-grasping capabilities built during a week-long hackathon. The goal of the competition was to build a free-form robot fitting certain size parameters to score as many points as possible by grabbing/transporting objects to a certain area, building a tower, completing side challenges, etc. I developed all the firmware for both the robot and the remote control required to drive the robot and control the claw.
 tags: featured,firmware,C/C++,Arduino,all projects
 img: robot1.gif
-### EOG analog front end PCB (1st gen)
+### EOG analog front end PCB (V1)
 A 4-layer printed circuit board dedicated to collecting EOG signals for eye tracking. The PCB features two identical channels (for capturing vertical and horizontal eye movements). Each channel has an instrumentation amplifier, a high pass filter (0.4Hz cutoff), a twin-T notch filter for eliminating the 60Hz noise, Sallen-Key low pass filter (48Hz cutoff), and another amplification stage. All circuit blocks are intended to capture the EOG signal, so every setting was selected to accomodate for the frequency range and the typical amplitude of the signal. The input to the board are power + five electrodes (2 per channel, and one reference). The output are two analog signals that could be sampled with a 5V-compatible microcontroller.
 tags: neurotech,hardware,all projects
 img: eog_1st_gen.jpg
