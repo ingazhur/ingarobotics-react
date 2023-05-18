@@ -5,7 +5,7 @@ img: SAM.png
 ### EMG wristband [in progress]
 I was curious to explore how we can utilize real-time processing of EMG (electromyography = measuring muscle response and electrical activity) signals from the wrist and translate captured features into controls. Potential application could be replacing remote control of an electric skateboard or playing musical instruments. This project won Jacobs Innovation Spark grant for Spring 2023.
 tags: hardware,neurotech,firmware,C/C++,ESP32,ongoing projects,all projects
-img: EMG.png
+img: EMG.jpg
 ### MIT Reality Hack 2023
 Team submission to a 3-day VR/AR hackathon at MIT as a part of the hardware track. We designed our own controller connecting to a Oculus headset via bluetooth. We wanted to make climbing the stairs more fun by incorporating hardware feedback (LEDs and vibration motors activated by a step count) and motivating videos embedded into the VR passthrough experience. I designed the step tracking system based on IMU sensor and barometer, plus firmware integration. This project won the "Hardware: Interfacing with the Human Body" track. 
 [(Link to a Devpost for more details)](https://devpost.com/software/arcade-steps)
