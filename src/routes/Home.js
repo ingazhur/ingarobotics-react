@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 import '../index.css';
 import { useEffect, useState } from 'react';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const Home = () => {
   const [mode, setMode] = useState('light');
   useEffect(() => {
@@ -24,6 +26,7 @@ const Home = () => {
       <CenterSection />
       <FeaturedSection />
       <Footer />
+      <Analytics />
     </div>
   )
 }
