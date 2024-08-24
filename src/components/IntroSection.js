@@ -12,7 +12,12 @@ const IntroSection = () => {
             <img src="../../imgs/me.png"/>
         </div>
         <div className="intro-text">
-            <p>Hi! My name is Inga, and I am a senior at UC Berkeley studying Electrical Engineering & Computer Science. I am a hardware hacker curious about brain-computer interfaces and restoration of broken sensory inputs.</p>
+            <p>Hi! My name is Inga, and I am engineering devices for reversible cryopreservation at Cradle. 
+              Previously, I've researched speech neuroprostheses at Berkeley Speech Group and Chang Lab at UCSF and 
+              led the hardware development for non-invasive neural interfaces at Berkeley's neurotech club. 
+              I am interested in BCIs for restoration and augmentation of sensory inputs.
+              
+              </p>
             <div className="social-icons">
               <a href="https://github.com/ingazhur" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />

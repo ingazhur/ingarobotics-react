@@ -105,7 +105,7 @@ const ProjectsIntro = () => {
 
   return (
     <div className="projects-intro">
-        <h3>A directory of my personal and team projects.</h3>
+        <h3>A directory of my personal side projects.</h3>
         <div className="drop-down-menu">
             <Select 
                 isMulti 

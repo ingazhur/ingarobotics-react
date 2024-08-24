@@ -29,7 +29,6 @@ const Navbar = () => {
 
         <ul className="nav-menu">
             <li><Link to="/projects">projects</Link></li>
-            <li><Link to="/resume">resume</Link></li>
         </ul>
     </div>
   )
