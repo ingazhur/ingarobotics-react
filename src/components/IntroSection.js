@@ -16,7 +16,6 @@ const IntroSection = () => {
               Previously, I've researched speech neuroprostheses at Berkeley Speech Group and Chang Lab at UCSF and 
               led the hardware development for non-invasive neural interfaces at Berkeley's neurotech club. 
               I am interested in BCIs for restoration and augmentation of sensory inputs.
-              
               </p>
             <div className="social-icons">
               <a href="https://github.com/ingazhur" target="_blank">
