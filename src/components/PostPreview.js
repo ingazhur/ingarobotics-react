@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'html-react-parser';
 import PopUp from './PopUp';
 import './PostPreview.css';
 import colors from "../content/colors.json";
