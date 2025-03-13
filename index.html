@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="main-content">
+        <div class="content-block">
+            <h2>Inga Zhuravleva</h2>
+            <p>I am a hardware hacker obsessed with working on most ambitious sci-fi ideas.</p>
+            <p>Currently, I am building new hardware at 
+            <a style="color: #D78751;" href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Midjourney</a>, 
+            exploring new ways of human-computer and AI interaction. 
+            Previously, I was building biological time travel at <a style="color: #D78751;" href="https://www.cradle.xyz/home" target="_blank" rel="noopener noreferrer">Cradle</a>, 
+            where I was the first engineer on the organ cryopreservation program.</p>
+            <p>In the past, I’ve researched multimodal invasive BCIs for text, speech, 
+                and avatar decoding at UCSF Chang Lab and Berkeley Speech Group 
+                <a style="color: #D78751;" href="https://www.nature.com/articles/s41586-023-06443-4" target="_blank" rel="noopener noreferrer">(Nature 2023)</a>. 
+                Such neuroprosthesis enabled a pathway to restoring naturalistic communication 
+                for people with severe paralysis.</p>
+            <p>While in college, I’ve organized a few iterations of 
+                <a style="color: #D78751;" href="https://hackberkeley.org/" target="_blank" rel="noopener noreferrer">Cal Hacks</a>, 
+                getting together 1000+ students around the US for a weekend of non-stop hacking. 
+                Having found lots of joy using 
+                <a href="https://dontbuildsaas.com/" target="_blank" rel="noopener noreferrer">fabric of reality itself as my canvas </a>
+                (aka building hardware), I care a lot about support people building in physical space. 
+                If you’d like to chat, reach me at 
+                <span style="color: #D78751;">ingarobotics [at] gmail.com</span> !</p>
+        </div>  
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://x.com/ingarobotics" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://www.linkedin.com/in/inga-zhuravleva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">home</a>
+        <a href="#">books</a>
+        <a href="#">writing</a>
+        <a href="#">projects</a>
+    </div>
+
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

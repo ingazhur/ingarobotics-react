@@ -1,0 +1,212 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
+/* CSS Variables for theming */
+:root {
+    /* Default theme (home page) */
+    --bg-color: #225353;
+    --text-color: #F7CB93;
+}
+
+/* Theme classes */
+.theme-books {
+    --bg-color: #324b73;
+    --text-color: #f5d5a0;
+}
+
+.theme-writing {
+    --bg-color: #443c68;
+    --text-color: #f8e9b0;
+}
+
+.theme-projects {
+    --bg-color: #4a3b52;
+    --text-color: #e6c095;
+}
+
+/* Base styles */
+/* Default styles for scrollable pages */
+body {
+    font-family: Texturina, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 5rem;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    position: relative; /* Ensure proper positioning context */
+}
+
+/* Special class for the index page to prevent scrolling */
+body.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 250px; /* Make space for the sidebar */
+}
+
+.content-block {
+    margin-bottom: 2rem;
+    width: 100%;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.content-block:first-child {
+    width: 60%;
+}
+
+.content-block h2 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 10.5rem; /* Align with the first paragraph, adjust as needed */
+    right: 5rem;
+    height: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: right;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 2rem 0 0 0;
+    text-align: left;
+    border-top: 3px dotted var(--text-color);
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 60%;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: var(--text-color);
+    transition: all 0.3s;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .main-content {
+        margin-right: auto; /* Reset the margin for mobile */
+    }
+
+    .footer {
+        max-width: 100%; /* Make footer full width on mobile */
+    }
+
+    .sidebar {
+        position: fixed;
+        top: -300px;
+        left: 0;
+        right: auto;
+        width: 100%;
+        height: auto;
+        background-color: var(--bg-color);
+        transition: top 0.3s ease;
+        z-index: 999;
+        padding: 70px 2rem 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: top 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+    }
+
+    .sidebar a {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .sidebar.active {
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: top 0.3s ease, opacity 0.3s ease, visibility 0s 0s;
+    }
+
+    .content-block:first-child {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+}
