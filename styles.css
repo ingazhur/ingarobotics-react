@@ -9,9 +9,9 @@
 }
 
 /* Theme classes */
-.theme-books {
-    --bg-color: #324b73;
-    --text-color: #f5d5a0;
+.theme-projects {
+    --bg-color: #C9D78B;
+    --text-color: #414235;
 }
 
 .theme-writing {
@@ -19,9 +19,9 @@
     --text-color: #f8e9b0;
 }
 
-.theme-projects {
-    --bg-color: #4a3b52;
-    --text-color: #e6c095;
+.theme-books {
+    --bg-color: #471D28;
+    --text-color: #dcabc5;
 }
 
 /* Base styles */
